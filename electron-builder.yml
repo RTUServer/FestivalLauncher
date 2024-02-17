@@ -1,5 +1,5 @@
 appId: 'festivallauncher'
-productName: '페스티벌 런쳐'
+productName: 'Festival'
 artifactName: '${productName}-setup-${version}.${ext}'
 
 copyright: 'Copyright © 2020-2024 IPECTER'
