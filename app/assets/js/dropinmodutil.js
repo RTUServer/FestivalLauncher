@@ -12,7 +12,7 @@ const DISABLED_EXT = '.disabled'
 const SHADER_REGEX = /^(.+)\.zip$/
 const SHADER_OPTION = /shaderPack=(.+)/
 const SHADER_DIR = 'shaderpacks'
-const SHADER_CONFIG = 'optionsshaders.txt'
+const SHADER_CONFIG = 'config/iris.properties'
 
 /**
  * Validate that the given directory exists. If not, it is
@@ -22,6 +22,10 @@ const SHADER_CONFIG = 'optionsshaders.txt'
  */
 exports.validateDir = function(dir) {
     fs.ensureDirSync(dir)
+}
+
+exports.validateFile = function(dir) {
+    fs.ensureFileSync(dir)
 }
 
 /**
@@ -156,7 +160,7 @@ exports.scanForShaderpacks = function(instanceDir){
     const shaderDir = path.join(instanceDir, SHADER_DIR)
     const packsDiscovered = [{
         fullName: 'OFF',
-        name: 'Off (Default)'
+        name: '비활성화'
     }]
     if(fs.existsSync(shaderDir)){
         let modCandidates = fs.readdirSync(shaderDir)
@@ -194,7 +198,7 @@ exports.getEnabledShaderpack = function(instanceDir){
             console.warn('WARNING: Shaderpack regex failed.')
         }
     }
-    return 'OFF'
+    return 'Photon.zip'
 }
 
 /**
@@ -204,7 +208,8 @@ exports.getEnabledShaderpack = function(instanceDir){
  * @param {string} pack the file name of the shaderpack.
  */
 exports.setEnabledShaderpack = function(instanceDir, pack){
-    exports.validateDir(instanceDir)
+    exports.validateDir(instanceDir + '/config')
+    exports.validateFile(instanceDir + '/' + SHADER_CONFIG)
 
     const optionsShaders = path.join(instanceDir, SHADER_CONFIG)
     let buf
