@@ -45,3 +45,15 @@ jobs:
             dist/*.dmg
             dist/*.AppImage
             dist/*.exe
+      - name: Release
+        uses: softprops/action-gh-release@v0.1.15
+        with:
+          name: "Build #${{ env.RELEASE }}"
+          tag_name: ${{ env.RELEASE }}
+          target_commitish: ${{ github.ref_name }}
+          generate_release_notes: true
+          fail_on_unmatched_files: true
+          files: |
+            dist/*.dmg
+            dist/*.AppImage
+            dist/*.exe
