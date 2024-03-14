@@ -2,6 +2,7 @@
  * Script for landing.ejs
  */
 // Requirements
+const fs                      = require('fs-extra')
 const { URL }                 = require('url')
 const {
     MojangRestAPI,
@@ -140,6 +141,16 @@ document.getElementById('avatarOverlay').onclick = async e => {
         settingsNavItemListener(document.getElementById('settingsNavAccount'), false)
     })
 }
+
+document.getElementById('screenshotsMediaButton').onclick = async e => {
+    const screenshotDir = path.join(ConfigManager.getInstanceDirectory(), ConfigManager.getSelectedServer(), 'screenshots')
+    await fs.ensureDir(screenshotDir)
+    shell.openPath(screenshotDir)
+}
+
+// document.getElementById('logMediaButton').onclick = e => {
+//     shell.showItemInFolder(path.join(ConfigManager.getInstanceDirectory(), ConfigManager.getSelectedServer(), 'logs', 'latest.log'))
+// }
 
 // Bind selected account
 function updateSelectedAccount(authUser){

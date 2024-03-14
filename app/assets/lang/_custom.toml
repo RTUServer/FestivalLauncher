@@ -4,11 +4,11 @@
 title = "페스티벌 런쳐"
 
 [ejs.landing]
-mediaGitHubURL = "https://github.com/IPECTER"
-mediaTwitterURL = "#"
-mediaInstagramURL = "#"
-mediaYouTubeURL = "#"
-mediaDiscordURL = "#"
+mediaChzzkURL = "https://chzzk.naver.com/6ac90c74f25c222d73979f69945f3e09"
+mediaAfreecaURL = "https://bj.afreecatv.com/ipecter"
+mediaYouTubeURL = "https://youtube.com/c/이팩터"
+screenshotsTooltip = "스크린샷"
+logsTooltip = "로그"
 
 [ejs.settings]
 sourceGithubLink = "https://github.com/RTUServer/FestivalLauncher"
