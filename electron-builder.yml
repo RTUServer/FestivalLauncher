@@ -1,23 +1,23 @@
-appId: 'festivallauncher'
-productName: 'Festival'
-artifactName: '${productName}-setup-${version}.${ext}'
+appId: "festivallauncher"
+productName: "Festival"
+artifactName: "${productName}-setup-${version}.${ext}"
 
-copyright: 'Copyright © 2020-2024 IPECTER'
+copyright: "Copyright © 2020-2024 IPECTER"
 
 asar: true
-compression: 'maximum'
+compression: "maximum"
 
 files:
-  - '!{dist,.gitignore,.vscode,docs,dev-app-update.yml,.nvmrc,.eslintrc.json}'
+  - "!{dist,.gitignore,.vscode,docs,dev-app-update.yml,.nvmrc,.eslintrc.json}"
 
 extraResources:
-  - 'libraries'
+  - "libraries"
 
 # Windows Configuration
-win: 
-  target: 
-    - target: 'nsis'
-      arch: 'x64'
+win:
+  target:
+    - target: "nsis"
+      arch: "x64"
 
 # Windows Installer Configuration
 nsis:
@@ -29,23 +29,22 @@ nsis:
 # macOS Configuration
 mac:
   target:
-    - target: 'dmg'
+    - target: "dmg"
       arch:
-        - 'x64'
-        - 'arm64'
-  artifactName: '${productName}-setup-${version}-${arch}.${ext}'
-  category: 'public.app-category.games'
+        - "x64"
+        - "arm64"
+  artifactName: "${productName}-setup-${version}-${arch}.${ext}"
+  category: "public.app-category.games"
 
 # Linux Configuration
-linux: 
-  target: 'AppImage'
-  maintainer: 'IPECTER'
-  vendor: 'IPECTER'
-  synopsis: 'Modded Minecraft Launcher'
-  description: '페스티벌 서버의 전용 런쳐입니다. HeliosLauncher를 기반으로 하고 있습니다.'
-  category: 'Game'
-
+linux:
+  target: "AppImage"
+  maintainer: "IPECTER"
+  vendor: "IPECTER"
+  synopsis: "Modded Minecraft Launcher"
+  description: "페스티벌 서버의 전용 런쳐입니다. HeliosLauncher를 기반으로 하고 있습니다."
+  category: "Game"
 
 directories:
-  buildResources: 'build'
-  output: 'dist'
+  buildResources: "build"
+  output: "dist"
