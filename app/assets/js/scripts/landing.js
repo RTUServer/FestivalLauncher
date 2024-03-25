@@ -462,13 +462,13 @@ async function dlAsync(login = true) {
     // launching the game.
     const loggerLaunchSuite = LoggerUtil.getLogger('LaunchSuite')
 
-    loggerLaunchSuite.info("1")
+    loggerLaunchSuite.info('1')
     setLaunchDetails(Lang.queryJS('landing.dlAsync.loadingServerInfo'))
-    loggerLaunchSuite.info("2")
+    loggerLaunchSuite.info('2')
 
     let distro
 
-    loggerLaunchSuite.info("3")
+    loggerLaunchSuite.info('3')
     try {
         distro = await DistroAPI.refreshDistributionOrFallback()
         onDistroRefresh(distro)
@@ -477,7 +477,7 @@ async function dlAsync(login = true) {
         showLaunchFailure(Lang.queryJS('landing.dlAsync.fatalError'), Lang.queryJS('landing.dlAsync.unableToLoadDistributionIndex'))
         return
     }
-    loggerLaunchSuite.info("4")
+    loggerLaunchSuite.info('4')
 
     const serv = distro.getServerById(ConfigManager.getSelectedServer())
 
