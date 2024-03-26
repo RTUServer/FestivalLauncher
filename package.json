@@ -1,6 +1,6 @@
 {
   "name": "festivallauncher",
-  "version": "1.0.2",
+  "version": "1.1.0",
   "productName": "Festival Launcher",
   "description": "Modded Minecraft Launcher",
   "author": "IPECTER (https://github.com/IPECTER) & Daniel Scalzi (https://github.com/dscalzi/)",
@@ -46,6 +46,6 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/karu724/FestivalLauncher.git"
+    "url": "git+https://github.com/RTUServer/FestivalLauncher.git"
   }
 }
