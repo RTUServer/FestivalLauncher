@@ -211,9 +211,9 @@ checkConsoleForDetails = "Please check the console (CTRL + Shift + i) for more d
 checking = "Checking for News"
 
 [js.landing.discord]
-loading = "페스티벌을 즐기는 중!."
-joining = "페스티벌을 즐기는 중!!"
-joined = "페스티벌을 즐기는 중!!!"
+loading = "페스티벌을 즐기러 가는 중.."
+joining = "페스티벌을 즐기러 가는 중..."
+joined = "페스티벌을 즐기는 중!"
 
 [js.overlay]
 dismiss = "취소"
