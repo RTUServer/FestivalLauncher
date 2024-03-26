@@ -223,14 +223,14 @@ executables = "실행 파일"
 allFiles = "모든 파일"
 
 [js.settings.mstfLogin]
-errorTitle = "Something Went Wrong"
-errorMessage = "Microsoft authentication failed. Please try again."
-okButton = "OK"
+errorTitle = "로그인 실패"
+errorMessage = "계정 인증에 실패하였습니다. 다시 로그인을 해주세요."
+okButton = "확인"
 
 [js.settings.mstfLogout]
-errorTitle = "Something Went Wrong"
-errorMessage = "Microsoft logout failed. Please try again."
-okButton = "OK"
+errorTitle = "로그아웃 실패"
+errorMessage = "로그아웃을 실패하였습니다. 다시 시도해주세요."
+okButton = "확인"
 
 [js.settings.authAccountSelect]
 selectButton = "계정 선택"
@@ -254,7 +254,7 @@ removeButton = "제거"
 deleteFailedTitle = "Failed to Delete<br>Drop-in Mod {fullName}"
 deleteFailedMessage = "Make sure the file is not in use and try again."
 failedToggleTitle = "Failed to Toggle<br>One or More Drop-in Mods"
-okButton = "Okay"
+okButton = "확인"
 
 [js.settings.serverListing]
 mainServer = "메인 서버"
@@ -280,18 +280,18 @@ checkForUpdatesButton = "업데이트 확인"
 checkingForUpdatesButton = "업데이트 확인 중.."
 
 [js.uibinder.startup]
-fatalErrorTitle = "Fatal Error: Unable to Load Distribution Index"
-fatalErrorMessage = "A connection could not be established to our servers to download the distribution index. No local copies were available to load. <br><br>The distribution index is an essential file which provides the latest server information. The launcher is unable to start without it. Ensure you are connected to the internet and relaunch the application."
-closeButton = "Close"
+fatalErrorTitle = "오류: 배포 인덱스를 찾을 수 없습니다."
+fatalErrorMessage = "다운로드 서버에 연결할 수 없습니다.<br>인터넷 연결을 확인해주세요.<br>동일 증상이 반복되면 관리자에게 문의 바랍니다."
+closeButton = "닫기"
 
 [js.uibinder.validateAccount]
-failedMessageTitle = "Failed to Refresh Login"
-failedMessage = "We were unable to refresh the login for <strong>{account}</strong>. Please select another account or login again."
-failedMessageSelectAnotherAccount = "We were unable to refresh the login for <strong>{account}</strong>. Please login again."
-loginButton = "Login"
+failedMessageTitle = "로그인 정보 새로고침 실패"
+failedMessage = "다음 계정의 로그인 정보를 찾을 수 없습니다: <strong>{account}</strong>. 다른 계정을 선택하시거나 다시 로그인 해주세요."
+failedMessageSelectAnotherAccount = "다음 계정의 로그인 정보를 찾을 수 없습니다: <strong>{account}</strong>. 다시 로그인 해주세요."
+loginButton = "로그인"
 selectAnotherAccountButton = "Select Another Account"
 
 [js.uicore.autoUpdate]
-checkingForUpdateButton = "Checking for Updates..."
-installNowButton = "Install Now"
-checkForUpdatesButton = "Check for Updates"
+checkingForUpdateButton = "업데이트 확인 중..."
+installNowButton = "설치하기"
+checkForUpdatesButton = "업데이트 확인하기"
